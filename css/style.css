@@ -27,6 +27,16 @@ tbody th {
     font-weight:300;
 }
 
+.text-small {
+    font-size: calc(8px + 1vh);
+}
+
+.separatore_esercizio {
+    background-color: aqua;
+    text-align: center;
+    padding: 2rem 0;
+}
+
 
 /**********************************************************
 | # DEBUG
