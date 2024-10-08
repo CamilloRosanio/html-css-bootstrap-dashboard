@@ -29,6 +29,10 @@
     <!-- FONT -->
         <!-- paste here -->
 
+    <!-- FONT AWESOME LIBRARY -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <!-- STYLE -->
         <link rel="stylesheet" href="./css/style.css"> 
 
@@ -48,6 +52,7 @@
 <body>
    
     <header>
+        
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 
@@ -87,13 +92,126 @@
               </form>
             </div>
           </nav>
+
     </header> 
 
     <main>
         
-        
+        <div class="container">
+            
+            <!-- TITLE + BUTTON -->
+            <div class="d-flex justify-content-between py-4">
+                <h1>Catalogo Libri</h1>
+                <button class="btn btn-primary">Aggiungi Libro</button>
+            </div>
 
-        
+            <!-- TABLE -->
+            <table id="tabella_contenuti" class="table table-striped">
+                
+                <!-- TABLE HEADER -->
+                <thead>
+                  <tr>
+                    <th scope="col">Titolo</th>
+                    <th scope="col">Data prestito</th>
+                    <th scope="col">Stato</th>
+                    <th scope="col">Azioni</th>
+                  </tr>
+                </thead>
+                
+                <!-- TABLE BODY -->
+                <tbody>
+                  <!-- ROW -->
+                  <tr>
+                    <th scope="row">I pilastri della terra</th>
+                    <td>-</td>
+                    <td><span class="badge bg-success">placeholder</span></td>
+                    <td>
+                        <button type="button" class="btn btn-outline-secondary fs-6"><i class="fa-solid fa-trash"></i></button>
+                        <button type="button" class="btn btn-outline-secondary fs-6"><i class="fa-solid fa-pencil"></i></button>
+                    </td>
+                  </tr>
+                  <!-- ROW -->
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <!-- ROW -->
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                  <!-- ROW -->
+                  <tr>
+                    <th scope="row">I pilastri della terra</th>
+                    <td>-</td>
+                    <td><span class="badge bg-success">placeholder</span></td>
+                    <td>@mdo</td>
+                  </tr>
+                  <!-- ROW -->
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <!-- ROW -->
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                  <!-- ROW -->
+                  <tr>
+                    <th scope="row">I pilastri della terra</th>
+                    <td>-</td>
+                    <td><span class="badge bg-success">placeholder</span></td>
+                    <td>@mdo</td>
+                  </tr>
+                  <!-- ROW -->
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <!-- ROW -->
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                  <!-- ROW -->
+                  <tr>
+                    <th scope="row">I pilastri della terra</th>
+                    <td>-</td>
+                    <td><span class="badge bg-success">placeholder</span></td>
+                    <td>@mdo</td>
+                  </tr>
+                  <!-- ROW -->
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <!-- ROW -->
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
     </main>
 
     <footer>
