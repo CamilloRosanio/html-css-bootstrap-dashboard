@@ -16,7 +16,7 @@
         <title>Bootstrap Dashboard</title>
 
     <!-- FAVICON -->
-        <link rel="icon" type="image/x-icon" href="">
+        <link rel="icon" type="image/x-icon" href="./img/favicon.png">
 
     <!-- INFO AGGIUNTIVE -->
         <meta name="author" content="Camillo Rosanio">
@@ -48,11 +48,52 @@
 <body>
    
     <header>
-        header
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                
+            <!-- BRAND LOGO -->
+            <a class="navbar-brand mx-3" href="#">
+                <img id="navbar_logo-img" src="./img/duck.png" class="d-inline-block align-top" alt="logo">
+            </a>
+            
+            <!-- BUTTON HAMBURGER MENU -->
+            <button class="navbar-toggler mx-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+              
+              <!-- LINK LIST -->
+                <ul class="navbar-nav mr-auto">
+                <!-- LINK ACTIVE -->
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Catalogo Libri</a>
+                </li>
+                <!-- LINK -->
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Anagrafica Utenti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Storico Prestiti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Help</a>
+                </li>
+              </ul>
+              
+              <!-- SEARCH BAR -->
+              <form class="form-inline d-flex my-2 my-lg-0 mx-3">
+                <input class="form-control mr-sm-2" type="search" placeholder="Cerca..." aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cerca</button>
+              </form>
+            </div>
+          </nav>
     </header> 
 
     <main>
-        main
+        
+        
+
+        
     </main>
 
     <footer>
