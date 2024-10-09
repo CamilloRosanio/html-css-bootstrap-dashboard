@@ -107,41 +107,88 @@
             </div>
 
             <!-- FORM -->
-            <section class="debug">
+            <section>
 
                 <form>
 
                     <!-- INFO AUTORE -->
-                    <div class="row">
+                    <div class="mb-4">
+                        <div class="row">
                         
-                        <!-- NOME AUTORE -->
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="InputAuthorName">Nome Autore</label>
-                                <input type="text" class="form-control" id="InputAuthorName" aria-describedby="" placeholder="Inserisci il nome dell'autore">
+                            <!-- NOME AUTORE -->
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="InputAuthorName" class="h5">Nome Autore</label>
+                                    <input type="text" class="form-control" id="InputAuthorName" aria-describedby="" placeholder="Inserisci il nome dell'autore">
+                                </div>
                             </div>
-                        </div>
 
-                        <!-- COGNOME AUTORE -->
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="InputAuthorSurname">Cognome Autore</label>
-                                <input type="text" class="form-control" id="InputAuthorSurname" placeholder="Inserisci il cognome dell'autore">
+                            <!-- COGNOME AUTORE -->
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="InputAuthorSurname" class="h5">Cognome Autore</label>
+                                    <input type="text" class="form-control" id="InputAuthorSurname" placeholder="Inserisci il cognome dell'autore">
+                                </div>
                             </div>
                         </div>
                     </div>
-
+                    
                     <!-- TITOLO -->
-                    <div class="form-group">
-                        <label for="InputAuthorName">Nome Autore</label>
-                        <input type="text" class="form-control" id="InputAuthorName" aria-describedby="emailHelp" placeholder="Inserisci il nome dell'autore">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <div class="mb-4">
+                        <div class="form-group">
+                            <label for="InputBookTitle" class="h5">Titolo</label>
+                            <input type="text" class="form-control" id="InputBookTitle" aria-describedby="BookTitleHelp" placeholder="Inserisci titolo del libro">
+                            <small id="BookTitleHelp" class="form-text text-muted">Titolo versione italiana</small>
+                        </div>
+                    </div>
+
+                    <!-- INFO LIBRO -->
+                    <div class="row">
+                        <!-- GENERE -->
+                        <div class="col-lg-4">
+                            <div class="mb-4">
+                                <div class="form-group">
+                                    <label for="InputBookGenre" class="h5">Genere</label>
+                                    <select class="form-control" id="InputBookGenre">
+                                        <option value="">Scegli il genere</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- ANNO DI PUBBLICAZIONE -->
+                        <div class="col-lg-4">
+                            <div class="mb-4">
+                                <div class="form-group">
+                                    <label for="InputPublicationYear" class="h5">Anno di Pubblicazione</label>
+                                    <input type="number" class="form-control" id="InputPublicationYear" aria-describedby="" placeholder="Inserisci l'anno">
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- ISBN# -->
+                        <div class="col-lg-4">
+                            <div class="mb-4">
+                                <div class="form-group">
+                                    <label for="InputBookISBN" class="h5">ISBN#</label>
+                                    <input type="text" class="form-control" id="InputBookISBN" aria-describedby="" placeholder="Inserisci codice ISBN#">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
+                    <!-- DIVIDER -->
+                    <br>
+                    
 
                     
 
-                    <div class="form-check">
+                    <div class="form-check mb-4">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
