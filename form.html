@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!--**********************************************************
+| # HEAD
+**********************************************************-->
+
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- STRING MEDIAQUERY -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- TITOLO TAB -->
+        <title>Bootstrap Dashboard - Form</title>
+
+    <!-- FAVICON -->
+        <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+    <!-- INFO AGGIUNTIVE -->
+        <meta name="author" content="Camillo Rosanio">
+        <meta name="description" content="descrizione del file">
+        <meta name="keywords" content="keyword1, keyword2, keyword3">
+
+    <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- FONT -->
+        <!-- paste here -->
+
+    <!-- FONT AWESOME LIBRARY -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- STYLE -->
+        <link rel="stylesheet" href="./css/style.css"> 
+
+    <!-- CSS MEDIAQUERY (Separato) -->
+        <!-- ***FACOLTATIVO*** -->
+
+</head>
+
+
+
+
+
+<!--**********************************************************
+| # BODY
+**********************************************************-->
+
+<body>
+   
+    <header>
+        
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                
+            <!-- BRAND LOGO -->
+            <a class="navbar-brand mx-3" href="#">
+                <img id="navbar_logo-img" src="./img/duck.png" class="d-inline-block align-top" alt="logo">
+            </a>
+            
+            <!-- BUTTON HAMBURGER MENU -->
+            <button class="navbar-toggler mx-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+              
+              <!-- LINK LIST -->
+                <ul class="navbar-nav mr-auto">
+                <!-- LINK ACTIVE -->
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Catalogo Libri</a>
+                </li>
+                <!-- LINK -->
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Anagrafica Utenti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Storico Prestiti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Help</a>
+                </li>
+              </ul>
+              
+              <!-- SEARCH BAR -->
+              <form class="form-inline d-flex my-2 my-lg-0 mx-3">
+                <input class="form-control mr-sm-2" type="search" placeholder="Cerca..." aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cerca</button>
+              </form>
+            </div>
+          </nav>
+
+    </header> 
+
+    <main>
+
+
+        <!-- CONTAINER -->
+        <div class="container">
+            
+            <!-- TITLE -->
+            <div class="d-flex py-4">
+                <h1 class="h2">Nuovo Libro</h1>
+            </div>
+
+            <!-- FORM -->
+            <section class="debug">
+
+                <form>
+
+                    <!-- INFO AUTORE -->
+                    <div class="row">
+                        
+                        <!-- NOME AUTORE -->
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="InputAuthorName">Nome Autore</label>
+                                <input type="text" class="form-control" id="InputAuthorName" aria-describedby="" placeholder="Inserisci il nome dell'autore">
+                            </div>
+                        </div>
+
+                        <!-- COGNOME AUTORE -->
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="InputAuthorSurname">Cognome Autore</label>
+                                <input type="text" class="form-control" id="InputAuthorSurname" placeholder="Inserisci il cognome dell'autore">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TITOLO -->
+                    <div class="form-group">
+                        <label for="InputAuthorName">Nome Autore</label>
+                        <input type="text" class="form-control" id="InputAuthorName" aria-describedby="emailHelp" placeholder="Inserisci il nome dell'autore">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    
+
+                    
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                  </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- footer -->
+    </footer>
+
+
+    <!-- BOOTSTRAP JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
